@@ -21,6 +21,7 @@ module.exports = function (app){
 		var userInfo = req.body;
 		var userScores = userInfo.scores;
 		console.log("userScore");
+		console.log(usesrScores);
 
 		// difference calculation
 		var difference = 0;
