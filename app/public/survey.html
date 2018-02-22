@@ -154,7 +154,8 @@
 
   <footer class="footer">
     <div class="container">
-      <p><a href="#">API Friends List</a> | <a href="https://github.com/MarieNabors/FRIEND_FINDER">GitHub Repo</a> | <a href="#">Heroku Repo</a></p> 
+      <p>
+        <a href="https://github.com/MarieNabors/FRIEND_FINDER">GitHub Repo</a> </p> 
 
     </div>
   </footer>
@@ -187,18 +188,18 @@
     // Submit button
     $('#Submit').on('click', function() {
       function validateForm(){
-      var isValid = true;
+      var Good = true;
       $(".form-control").each(function(){
         if ($(this).val()===""){
-          isValid = false;
+          Good = false;
         }
       });
       $(".chosen-select").each(function(){
         if ($(this).val()===""){
-          isValid = false;
+          Good = false;
         }
       });
-      return isValid;
+      return Good;
     }
     if (validateForm()){
       //  user inputs

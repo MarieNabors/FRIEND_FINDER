@@ -1,102 +1,118 @@
 var friends = [
 	
 	{
-		name: "Jordan",
-		photo: "https://i.pinimg.com/236x/da/ef/22/daef22bd900b59a7798891f85d8696d2.jpg",
+		name: "George",
+		photo: "https://goo.gl/images/rQ9VEq",
 		scores: [
-			"5",
-			"1",
-			"2",
-			"2",
 			"3",
 			"1",
 			"5",
 			"5",
 			"3",
-			"4"
-		]
-	},
-	{
-		name: "Alicia",
-		photo: "https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/06/05/Pictures/_84998926-49d7-11e7-942b-1b07039b2a8c.jpg",
-		scores: [
+			"4",
 			"1",
 			"1",
-			"4",
-			"4",
-			"5",
-			"4",
 			"2",
-			"3",
-			"4",
-			"1"
-		]
-	},
-	{
-		name: "Kelly",
-		photo: "https://i.pinimg.com/564x/8a/c1/ba/8ac1ba875938930cd8dc15eba78633ba.jpg",
-		scores: [
-			"4",
-			"4",
-			"4",
-			"4",
-			"5",
-			"3",
-			"2",
-			"5",
-			"4",
-			"4"
-		]
-	},
-	{
-		name: "Kym",
-		photo: "https://i.pinimg.com/564x/be/57/94/be5794e6e6d26033ef3a1022caadebe5.jpg",
-		scores: [
-			"5",
-			"2",
-			"4",
-			"4",
-			"5",
-			"1",
-			"2",
-			"2",
-			"4",
 			"5"
 		]
 	},
 	{
-		name: "Savannah",
-		photo: "https://i.pinimg.com/564x/ec/dc/0b/ecdc0be09164cb97dda13b38d0467387.jpg",
+		name: "Alicia",
+		photo: "https://goo.gl/images/K5zHMq",
 		scores: [
-			"5",
 			"5",
 			"4",
 			"3",
 			"5",
-			"1",
-			"2",
 			"5",
+			"2",
+			"1",
 			"4",
-			"4"
+			"2",
+			"5"
 		]
 	},
 	{
-		name: "Sandra",
-		photo: "https://i.pinimg.com/564x/7a/ff/18/7aff189e8a0d0790475e36245cab19e0.jpg",
+		name: "Rebel",
+		photo: "https://goo.gl/images/GCXo6t",
+		scores: [
+			"5",
+			"1",
+			"4",
+			"2",
+			"5",
+			"4",
+			"2",
+			"1",
+			"3",
+			"5"
+		]
+	},
+	{
+		name: "Brad",
+		photo: "https://goo.gl/images/2AkHvK",
+		scores: [
+			"1",
+			"3",
+			"2",
+			"5",
+			"1",
+			"2",
+			"5",
+			"1",
+			"2",
+			"3"
+		]
+	},
+	{
+		name: "Prince William",
+		photo: "https://goo.gl/images/awm1r1",
+		scores: [
+			"3",
+			"4",
+			"4",
+			"5",
+			"1",
+			"5",
+			"4",
+			"3",
+			"2",
+			"5"
+		]
+	},
+	{
+		name: "Will Smith",
+		photo: "https://goo.gl/images/LWPi5n",
+		scores: [
+			"1",
+			"2 ",
+			"4",
+			"3",
+			"5",
+			"5",
+			"5",
+			"3",
+			"1",
+			"1"
+		]
+	},
+
+{
+		name: "Channing",
+		photo: "https://goo.gl/images/tv9axK",
 		scores: [
 			"5",
 			"3 ",
 			"4",
 			"1",
 			"5",
-			"1",
-			"2",
 			"3",
-			"4",
-			"2"
+			"1",
+			"3",
+			"2",
+			"5"
 		]
 	},
-
 ];
 
 module.exports = friends;
