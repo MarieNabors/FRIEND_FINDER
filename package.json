@@ -1,0 +1,24 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "dating/matchmaker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarieNabors/FRIEND_FINDER.git"
+  },
+  "author": "Marie Nabors",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarieNabors/FRIEND_FINDER/issues"
+  },
+  "homepage": "https://github.com/MarieNabors/FRIEND_FINDER#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "nodemon": "^1.15.0"
+  }
+}
