@@ -9,7 +9,7 @@ module.exports = function (app){
 
 	app.post("/api/friends", function(req, res){
 		
-		var bestMatches = {
+		var topMatch = {
 			name: "",
 			photo: "",
 			friendDiff: 1000
@@ -17,29 +17,31 @@ module.exports = function (app){
 
 		console.log("req.body");
 
-		// results of survey POST and parse
+//stores user's input into req.body
 		var userInfo = req.body;
 		var userScores = userInfo.scores;
 		console.log("userScore");
 		console.log(usesrScores);
 
-		// difference calculation
-		var difference = 0;
+	//use subtraction to find the best match by comparing values from UserInput
+		var Differences = 0;
 
 		// loop thru database for best match
 		for (var i = 0; i<friends.length; i++) {
 			console.log(friends[i]);
-			difference = 0;
+			Differences = 0;
 
-			// loop thru friends data base for all posibilities
+			// for loop, loops through friends array
 			for (var j = 0; j<friends[i].scores[j]; j++){
-				difference += Math.abs(parseInt(userScores[j])- parseInt(friends[i].scores[j]));
-
+	//math.abs (math absolute) ensures the use of a positive integer
+	//subtracts the scores from friends array from user's score to calculate the difference
+				Differences += Math.abs(parseInt(userScores[j])- parseInt(friends[i].scores[j]));
+//+= difference is equal to difference plus the result of math.abs...
 				//compaire for best match check all friends scores
-				if (difference <= bestMatches.friendDiff){
-					bestMatches.name = friends[i].name;
-					bestMatches.photo = friends[i].photo;
-					bestMatches.friendDiff = difference;
+				if (difference <= topMatch.friendDiff){
+					topMatch.name = friends[i].name;
+					topMatch.photo = friends[i].photo;
+					topMatch.friendDiff = Differences;
 
 				}
 
@@ -47,7 +49,7 @@ module.exports = function (app){
 		}
 		friends.push(userInfo);
 
-		res.json(bestMatches);
+		res.json(topMatch);
 		
 	});
 
