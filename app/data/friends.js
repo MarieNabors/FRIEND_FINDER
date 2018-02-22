@@ -1,3 +1,6 @@
+//rather than using a database, this activity uses a separate file with an array, basically it's
+//our own new api
+
 var friends = [
 	
 	{
