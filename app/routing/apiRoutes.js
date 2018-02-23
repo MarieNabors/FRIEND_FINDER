@@ -20,8 +20,8 @@ console.log("req.body");
 //stores user's input into req.body
 var userInfo = req.body;
 var userScores = userInfo.scores;
-console.log("userScore");
-console.log(usesrScores);
+
+console.log(userScores);
 
 	//use subtraction to find the best match by comparing values from UserInput
 var Differences = 0;
@@ -33,10 +33,10 @@ var Differences = 0;
 
 // for loop, loops through friends' scores in friends array
 //loop within a loop
-		for (var j = 0; j<friends[i].scores[j]; j++){
+		for (var f = 0; f<friends[i].scores[j]; f++){
 	//math.abs (math absolute) ensures the use of a positive integer
 	//subtracts the scores from friends array from user's score to calculate the difference
-		Differences += Math.abs(parseInt(userScores[j])- parseInt(friends[i].scores[j]));
+		Differences += Math.abs(parseInt(userScores[f])- parseInt(friends[i].scores[f]));
 //+= difference is equal to difference plus the result of math.abs...
 				//compaires friend differences for best match check all friends scores
 		if (difference <= topMatch.friendDiff){
