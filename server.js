@@ -3,14 +3,14 @@ var express = require("express");
 var mysql = require("mysql");
 var bodyParser = require("body-parser");
 var path = require("path");
-var htmlRoute = require("./app/routing/htmlRoutes.js");
+//var htmlRoute = require("./app/routing/htmlRoutes.js");
 // Create express app instance.
 var app = express();
 
 // Specify the port.
 var PORT = 3000;
 
-htmlRoute(app);
+//htmlRoute(app);
 
 // define variable for json
 var jsonParser = bodyParser.json();

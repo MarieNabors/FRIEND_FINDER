@@ -15,7 +15,7 @@ var topMatch = {
 			friendDiff: 1000
 		};
 
-	console.log("req.body");
+console.log("req.body");
 
 //stores user's input into req.body
 var userInfo = req.body;

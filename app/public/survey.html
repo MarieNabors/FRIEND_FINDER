@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>Friend Finder</title>
   <!-- Lateset bootstrap 4.0 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
 
 <div class="container">
   <!-- survey  headder -->
-  <h2>Survey Questions</h2>
+  <h2>Survey Questions </h2>
   <hr>
 
   <h3><Strong>About You</Strong></h3>
@@ -222,9 +222,9 @@
 
       var currentURL = window.location.origin;
       
-      // Add friend to list
+      // send post request to server; store new input into friends array
       $.post(currentURL + "/api/friends", userInput, function(data){
-            // Ajax post match display
+          
             $('#matchName').text(data.name);
           $("#matchImage").attr("src", data.photo);   
           //show modal      
