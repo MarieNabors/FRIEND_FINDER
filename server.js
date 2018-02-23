@@ -8,7 +8,7 @@ var path = require("path");
 var app = express();
 
 // Specify the port.
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 //htmlRoute(app);
 
