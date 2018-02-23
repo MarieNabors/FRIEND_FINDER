@@ -8,7 +8,7 @@ var path = require("path");
 var app = express();
 
 // Specify the port.
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 
 //htmlRoute(app);
 
@@ -36,6 +36,6 @@ app.use(function(req, res){
 
 //Howard says this is the most important part on the page...the port listener
 app.listen(PORT, function(){
-	console.log("you are connected");
+	console.log("You are connected.");
 });
 
